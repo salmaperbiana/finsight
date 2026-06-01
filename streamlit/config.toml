@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────
+#  Finsight EDA Dashboard — Streamlit Config
+# ─────────────────────────────────────────────
+
+[server]
+# Port default; ubah jika bentrok dengan layanan lain
+port            = 8501
+# Izinkan akses dari semua network interface (wajib untuk deployment/container)
+address         = "0.0.0.0"
+# Matikan file watcher di production agar lebih ringan
+runOnSave       = false
+# Batas ukuran upload file (MB) — relevan untuk tab OCR
+maxUploadSize   = 200
+
+[browser]
+# Supaya tidak otomatis buka browser saat start (cocok untuk server/container)
+serverAddress   = "localhost"
+gatherUsageStats = false
+
+[theme]
+# Tema terang sesuai palet warna biru Finsight
+base             = "light"
+primaryColor     = "#1565C0"
+backgroundColor  = "#FFFFFF"
+secondaryBackgroundColor = "#F0F6FF"
+textColor        = "#1A2E4A"
+font             = "sans serif"
+
+[logger]
+# Level log: "error" | "warning" | "info" | "debug"
+level           = "warning"
+messageFormat   = "%(asctime)s %(levelname)s %(name)s: %(message)s"
