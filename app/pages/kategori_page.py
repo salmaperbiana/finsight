@@ -10,7 +10,7 @@ from components.cards import insight_card
 
 
 def render(dk):
-    st.markdown('<span class="dataset-badge-green">📂 Sumber: dataset_kategori.csv</span>', unsafe_allow_html=True)
+    st.markdown('<span class="dataset-badge-green">📂 Sumber: dataset_eda_final.csv</span>', unsafe_allow_html=True)
     st.markdown("Dataset pelatihan model klasifikasi otomatis kategori transaksi berdasarkan teks deskripsi pengeluaran.")
 
     render_kategori_metrics(dk)
